@@ -1,0 +1,220 @@
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+using Emgu.CV;
+using openalprnet;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+namespace FormTry
+{
+    public partial class Form1 : Form
+    {
+        VideoCapture capture, capture1;
+
+        private readonly Mutex m = new Mutex();
+
+        string[,] arrPlate = new string[5, 2] {{"06DF144","Oguzhan Ozer"},
+                                      {"34BGH75","Mehmet Korkmaz"},
+                                      {"06ZGV89","Veli Kavlak"},
+                                      {"06TL002","Cem Gok"},
+                                      {"06GKN62","Deniz KIPCA"} };
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        public static byte[] ImageToByte(Image img)
+        {
+            ImageConverter converter = new ImageConverter();
+            return (byte[])converter.ConvertTo(img, typeof(byte[]));
+        }
+
+        private Semaphore sem = new Semaphore(0, 5);
+
+        void detectPlate(object target)
+        {
+
+           
+                string person = "";
+                string detectPlate = "";
+                float maxConf = 0.0f;
+                var alpr = new AlprNet("eu", "C:\\Users\\oguzhan\\source\\repos\\ConsoleApp1\\ConsoleApp1\\bin\\x64\\openalpr.conf", "C:\\Users\\oguzhan\\source\\repos\\ConsoleApp1\\ConsoleApp1\\bin\\x64\\runtime_data");
+
+                if (alpr.IsLoaded())
+                {
+                    textBox1.Text = "loaad";
+                }
+                else
+                {
+                    textBox1.Text = "OpenAlpr failed to load!";
+                    return;
+                }
+                alpr.DefaultRegion = "md";
+
+            // m.WaitOne();
+            sem.WaitOne();
+
+            try
+            {
+            
+                Image img = (Image)target;
+                var results = alpr.Recognize(ImageToByte(img));
+
+                string ss = "";
+
+                foreach (var result in results.Plates)
+                {
+                    ss += "" + result.TopNPlates.Count + "\n";
+
+                    foreach (var plate in result.TopNPlates)
+                    {
+                        ss += plate.Characters + "\n";
+
+                        richTextBox1.Text = "" + ss;
+
+                        if (plate.OverallConfidence > maxConf)
+                        {
+                            maxConf = plate.OverallConfidence;
+                            detectPlate = plate.Characters;
+                        }
+                    }
+                }
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (detectPlate == arrPlate[i, 0])
+                    {
+                        person = arrPlate[i, 1];
+                        MessageBox.Show(arrPlate[i, 0] + " - " + person);
+                    
+                    }
+                }
+
+                textBox1.Text = " Matches Template :  " + detectPlate + " -- Person : " + person;
+
+            }
+            //catch
+            finally{
+                // m.ReleaseMutex();
+                sem.Release(1);
+            }
+            
+        }
+
+        void processFrameAndUpdateGUI(object sender, EventArgs arg)
+        {
+            Mat[] imgOriginal = new Mat[2];
+            //, imgOriginal1;
+
+            imgOriginal[0] = capture.QueryFrame();
+            imgOriginal[1] = capture1.QueryFrame();
+
+            if (imgOriginal == null)
+            {
+                MessageBox.Show("unable to read frame from webcam" + Environment.NewLine + Environment.NewLine +
+                                "exiting program");
+                Environment.Exit(0);
+                return;
+            }
+
+            ımageBox1.Image = imgOriginal[0];
+            ımageBox2.Image = imgOriginal[1];
+
+         //   detectPlate(imgOriginal[0].Bitmap);
+          //  detectPlate(imgOriginal[1].Bitmap);
+
+
+           for(int i = 0; i < 15; i++)
+            {
+                ThreadPool.QueueUserWorkItem(new WaitCallback(detectPlate), imgOriginal[0].Bitmap);
+              //  Thread.Sleep(1000);
+            }
+
+
+            for (int i = 0; i < 15; i++)
+            {   
+                ThreadPool.QueueUserWorkItem(new WaitCallback(detectPlate), imgOriginal[1].Bitmap);
+                
+                //  Thread.Sleep(1000);
+            }
+
+            //thread = new Thread(() => detectPlate(imgOriginal.Bitmap));
+            //thread1 = new Thread(() => detectPlate(imgOriginal1.Bitmap));
+
+            //thread.Start();
+            //thread1.Start();
+
+            //ThreadPool.QueueUserWorkItem(new WaitCallback(defaulT), imgOriginal);
+            //ThreadPool.QueueUserWorkItem(new WaitCallback(defaulT), imgOriginal);
+
+        }
+        /*
+                static Random rnd = new Random();
+
+                 void defaulT(object target)
+                {
+                     Image map = (Image)target;
+
+                    threadx = Thread.CurrentThread;
+                    while (true)
+                    {
+                        int beklemezamani = rnd.Next(1000);
+
+                        try
+                        {
+                            threadx = new Thread(() => detectPlate(map));
+
+                            Thread.Sleep(00);
+                         //   Console.WriteLine("defa {0} ", threadx.ManagedThreadId);
+                        }
+                        catch (ThreadAbortException)
+                        {
+                            Console.WriteLine("Thread iptal edildi");
+                        }
+
+                    }
+                }
+                */
+
+
+
+         List<Task> tasks = new List<Task>();
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                capture = new Emgu.CV.VideoCapture(0);
+                capture1 = new Emgu.CV.VideoCapture(1);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("unable to read from webcam, error: " + Environment.NewLine + Environment.NewLine +
+                                ex.Message + Environment.NewLine + Environment.NewLine +
+                                "exiting program");
+                Environment.Exit(0);
+                return;
+            }
+            Application.Idle += processFrameAndUpdateGUI;       // add process image function to the application's list of tasks
+
+            // var task1 = Task.Factory.StartNew(() => Application.Idle += processFrameAndUpdateGUI);
+            // Task.WaitAll(task1);
+
+            //while (finding)
+            //{
+            //    tasks.Add(Task.Run(() =>  Application.Idle += processFrameAndUpdateGUI ));
+            //}
+
+            //Task.WaitAll(tasks.ToArray());
+
+        }
+
+    }
+
+    }
+

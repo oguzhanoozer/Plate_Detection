@@ -1,0 +1,95 @@
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\FormTry.exe.config
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\FormTry.exe
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\FormTry.pdb
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2015.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\Emgu.CV.UI.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\Emgu.CV.UI.GL.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\Emgu.CV.World.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\ZedGraph.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\Emgu.CV.UI.xml
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\Emgu.CV.UI.GL.xml
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\Emgu.CV.World.xml
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.csprojAssemblyReference.cache
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.Properties.Resources.resources
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.csproj.GenerateResource.cache
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.csproj.CoreCompileInputs.cache
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.csproj.CopyComplete
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.exe
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.pdb
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.Form1.resources
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x64\concrt140.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x64\cvextern.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x64\msvcp140.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x64\opencv_ffmpeg343_64.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x64\vcruntime140.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x86\concrt140.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x86\cvextern.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x86\msvcp140.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x86\opencv_ffmpeg343.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\x86\vcruntime140.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\ZedGraph.xml
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\obj\Debug\FormTry.exe.config
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\cvextern.dll
+C:\Users\oguzhan\source\repos\FormTry\FormTry\bin\Debug\cvextern.lib
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x64\concrt140.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x64\cvextern.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x64\msvcp140.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x64\opencv_ffmpeg343_64.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x64\vcruntime140.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x86\concrt140.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x86\cvextern.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x86\msvcp140.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x86\opencv_ffmpeg343.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\x86\vcruntime140.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\cvextern.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\cvextern.lib
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\FormTry.exe.config
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\FormTry.exe
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\FormTry.pdb
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2015.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.CV.UI.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.CV.UI.GL.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.CV.World.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.Util.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\openalpr-net.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\ZedGraph.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.CV.UI.xml
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.CV.UI.GL.xml
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.CV.World.xml
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\Emgu.Util.xml
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\ZedGraph.xml
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.csprojAssemblyReference.cache
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.exe.config
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.Form1.resources
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.Properties.Resources.resources
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.csproj.GenerateResource.cache
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.csproj.CoreCompileInputs.cache
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.csproj.CopyComplete
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.exe
+C:\Users\oguzhan\source\repos\FormTry - Kopya\FormTry\obj\Debug\FormTry.pdb
